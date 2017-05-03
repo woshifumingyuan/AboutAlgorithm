@@ -22,7 +22,6 @@ public int subarraySum(int[] nums, int k){
                 sum += nums[i];
                 result += preSum.getOrDefault(sum-k,0);
                 preSum.put(sum,preSum.getOrDefault(sum,0)+1);
-
         }
         return result;
 }
